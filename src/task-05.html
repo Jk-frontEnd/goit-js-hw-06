@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,12 +7,44 @@
     <title>Task 5</title>
     <link rel="stylesheet" href="css/common.css" />
   </head>
+  <style>
+    body {
+      color: #0f110c;
+      font-size: 24px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 120px;
+    }
+
+    a {
+      font-size: 18px;
+      color: #0f110c;
+      text-decoration: none;
+      font-weight: 500;
+
+      transition: all 250ms ease-in-out;
+    }
+
+    a:hover {
+      color: #9d6381;
+    }
+
+    h1 {
+      max-width: 700px;
+      text-align: center;
+    }
+  </style>
   <body>
     <p><a href="index.html">Go back</a></p>
-
-    <input type="text" id="name-input" placeholder="Please enter your name" />
-    <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
-
+    <div>
+      <input type="text" id="name-input" placeholder="Please enter your name" />
+      <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
+    </div>
     <script src="js/task-05.js" type="module"></script>
   </body>
 </html>
