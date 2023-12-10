@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (inputValue.length !== expectedLength) {
         input.classList.remove('valid');
         input.classList.add('invalid');
-    } else if (inputValue.length === expectedLength) {
+    } else {
       input.classList.remove('invalid');
       input.classList.add('valid');
       }
